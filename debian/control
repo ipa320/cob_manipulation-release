@@ -1,0 +1,12 @@
+Source: ros-indigo-cob-moveit-interface
+Section: misc
+Priority: extra
+Maintainer: Felix Messmer <fxm@ipa.fhg.de>
+Build-Depends: debhelper (>= 9.0.0), ros-indigo-catkin
+Homepage: http://ros.org/wiki/cob_manipulation/
+Standards-Version: 3.9.2
+
+Package: ros-indigo-cob-moveit-interface
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-indigo-geometry-msgs, ros-indigo-moveit-commander, ros-indigo-rospy, ros-indigo-tf
+Description: cob_moveit_interface
