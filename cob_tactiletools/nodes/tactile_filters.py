@@ -1,11 +1,9 @@
 #!/usr/bin/python
-import roslib; roslib.load_manifest('cob_tactiletools')
+
 import rospy
-from schunk_sdh.msg import TactileMatrix, TactileSensor
 from std_srvs.srv import *
 from std_msgs.msg import Bool, Float32MultiArray
-
-
+from schunk_sdh.msg import TactileMatrix, TactileSensor
 
 class TactileFilters():
     def __init__(self):
@@ -16,13 +14,13 @@ class TactileFilters():
         self.is_grasped = False
         self.is_cylindric_grasped = False
         self.one_pad_contact = False
-    
+
     def getMean(self, tarray):
         sum = 0
         for i in tarray:
             sum += i
         return sum/len(tarray)
-            
+
 
     def roscb(self, data):
         matrices = data.tactile_matrix
@@ -58,7 +56,7 @@ class TactileFilters():
         else:
         	self.one_pad_contact = False
         	self.one_pad_contact_publisher.publish(Bool(False))
-        
+
     def handle_is_grasped(self, req):
         res = TriggerResponse()
         if self.is_grasped == True:
@@ -80,7 +78,7 @@ class TactileFilters():
             res.message = "object not grasped"
         # print "status: is_cylindric_grasped = ",self.is_cylindric_grasped,", success = ",res.success
         return res
-        
+
     def handle_one_pad_contact(self, req):
         res = TriggerResponse()
         res.success = self.one_pad_contact
@@ -102,4 +100,4 @@ if (__name__ == "__main__"):
     print "Setting touched treshold to ", treshold
     while not rospy.is_shutdown():
         rospy.sleep(1.0)
-    
+
