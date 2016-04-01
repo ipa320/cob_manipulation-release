@@ -1,0 +1,12 @@
+Source: ros-indigo-cob-tactiletools
+Section: misc
+Priority: extra
+Maintainer: Alexander Bubeck <aub@ipa.fhg.de>
+Build-Depends: debhelper (>= 9.0.0), ros-indigo-catkin
+Homepage: http://ros.org/wiki/cob_manipulation/
+Standards-Version: 3.9.2
+
+Package: ros-indigo-cob-tactiletools
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-indigo-rospy, ros-indigo-schunk-sdh, ros-indigo-std-msgs, ros-indigo-std-srvs
+Description: cob_tactiletools
