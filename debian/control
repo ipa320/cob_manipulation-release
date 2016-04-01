@@ -1,0 +1,12 @@
+Source: ros-indigo-cob-moveit-config
+Section: misc
+Priority: extra
+Maintainer: Mathias Luedtke <mdl@ipa.fhg.de>
+Build-Depends: debhelper (>= 9.0.0), ros-indigo-catkin
+Homepage: http://moveit.ros.org/
+Standards-Version: 3.9.2
+
+Package: ros-indigo-cob-moveit-config
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-indigo-cob-hardware-config, ros-indigo-joint-state-publisher, ros-indigo-moveit-planners-ompl, ros-indigo-moveit-plugins, ros-indigo-moveit-ros-move-group, ros-indigo-moveit-ros-visualization, ros-indigo-robot-state-publisher, ros-indigo-xacro
+Description: MoveIt config files for all cob and raw
