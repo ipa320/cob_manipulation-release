@@ -1,0 +1,12 @@
+Source: ros-indigo-cob-obstacle-distance-moveit
+Section: misc
+Priority: extra
+Maintainer: Felix Messmer <fxm@ipa.fhg.de>
+Build-Depends: debhelper (>= 9.0.0), libboost-all-dev, libeigen3-dev, ros-indigo-catkin, ros-indigo-cmake-modules, ros-indigo-cob-control-msgs, ros-indigo-cob-srvs, ros-indigo-eigen-conversions, ros-indigo-fcl, ros-indigo-geometric-shapes, ros-indigo-geometry-msgs, ros-indigo-moveit-core, ros-indigo-moveit-msgs, ros-indigo-moveit-ros-perception, ros-indigo-moveit-ros-planning-interface, ros-indigo-roscpp, ros-indigo-tf, ros-indigo-tf-conversions
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-indigo-cob-obstacle-distance-moveit
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libboost-all-dev, libeigen3-dev, ros-indigo-cmake-modules, ros-indigo-cob-control-msgs, ros-indigo-cob-srvs, ros-indigo-eigen-conversions, ros-indigo-fcl, ros-indigo-geometric-shapes, ros-indigo-geometry-msgs, ros-indigo-moveit-core, ros-indigo-moveit-msgs, ros-indigo-moveit-ros-perception, ros-indigo-moveit-ros-planning-interface, ros-indigo-roscpp, ros-indigo-rospy, ros-indigo-tf, ros-indigo-tf-conversions
+Description: This package provides nodes for calculating the minimal distance to robot links, obstacles and octomap using MoveIt!'s PlanningSceneMonitor
