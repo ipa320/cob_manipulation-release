@@ -1,0 +1,64 @@
+ros-indigo-cob-obstacle-distance-moveit (0.6.5-0trusty) trusty; urgency=high
+
+  * Merge pull request #110 <https://github.com/ipa320/cob_manipulation/issues/110> from ipa320/ipa-fxm-refactor_configuration_structure
+    Refactor configuration structure
+  * restructure moveit config
+  * ;)
+  * deleted some whitespaces
+  * Added SRDF for AllowedCollisionMatrix computation
+  * Changed launchfile accourding to new cob structure
+  * do not load robot_description in cob_moveit_config/upload_config.launch
+  * minor launch adjustments
+  * add remaps for cob4 as comments
+  * move scripts to proper folder
+  * add install tags
+  * Contributors: Christoph Mark, Felix Messmer, ipa-fxm, ipa-nhg
+
+ -- Felix Messmer <fxm@ipa.fhg.de>  Sun, 30 Jul 2017 22:00:00 -0000
+
+ros-indigo-cob-obstacle-distance-moveit (0.6.4-0trusty) trusty; urgency=high
+
+  * use messages and services from new package cob_control_msgs
+  * removing license
+  * move obstacle_distance into new package cob_obstacle_distance_moveit
+  * Contributors: ipa-fxm
+
+ -- Felix Messmer <fxm@ipa.fhg.de>  Thu, 31 Mar 2016 22:00:00 -0000
+
+ros-indigo-cob-obstacle-distance-moveit (0.6.3-0trusty) trusty; urgency=high
+
+
+
+ -- Felix Messmer <fxm@ipa.fhg.de>  Sun, 30 Aug 2015 22:00:00 -0000
+
+ros-indigo-cob-obstacle-distance-moveit (0.6.2-0trusty) trusty; urgency=high
+
+
+
+ -- Felix Messmer <fxm@ipa.fhg.de>  Fri, 28 Aug 2015 22:00:00 -0000
+
+ros-indigo-cob-obstacle-distance-moveit (0.6.1-0trusty) trusty; urgency=high
+
+
+
+ -- Felix Messmer <fxm@ipa.fhg.de>  Tue, 16 Jun 2015 22:00:00 -0000
+
+ros-indigo-cob-obstacle-distance-moveit (0.6.0-0trusty) trusty; urgency=high
+
+
+
+ -- Felix Messmer <fxm@ipa.fhg.de>  Wed, 17 Sep 2014 22:00:00 -0000
+
+ros-indigo-cob-obstacle-distance-moveit (0.5.2-0trusty) trusty; urgency=high
+
+
+
+ -- Felix Messmer <fxm@ipa.fhg.de>  Wed, 27 Aug 2014 22:00:00 -0000
+
+ros-indigo-cob-obstacle-distance-moveit (0.5.1-0trusty) trusty; urgency=high
+
+
+
+ -- Felix Messmer <fxm@ipa.fhg.de>  Tue, 25 Mar 2014 23:00:00 -0000
+
+
