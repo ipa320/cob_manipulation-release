@@ -1,6 +1,6 @@
 <package format="2">
   <name>cob_pick_place_action</name>
-  <version>0.6.5</version>
+  <version>0.7.0</version>
   <description>
      An action interface to MoveIt!'s pick-and-place for Care-O-bot
   </description>
@@ -28,7 +28,6 @@
   <depend>moveit_ros_move_group</depend>
   <depend>moveit_ros_planning_interface</depend>
   <depend>roscpp</depend>
-  <depend>shape_tools</depend>
   <depend>std_msgs</depend>
   <depend>tf</depend>
 
