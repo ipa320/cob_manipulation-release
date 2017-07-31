@@ -1,3 +1,35 @@
+## cob_manipulation (indigo) - 0.6.5-1
+
+The packages in the `cob_manipulation` repository were released into the `indigo` distro by running `/usr/bin/bloom-release cob_manipulation --track indigo --rosdistro indigo` on `Mon, 31 Jul 2017 12:37:47 -0000`
+
+These packages were released:
+- `cob_collision_monitor`
+- `cob_grasp_generation`
+- `cob_kinematics`
+- `cob_lookat_action`
+- `cob_manipulation`
+- `cob_moveit_bringup`
+- `cob_moveit_interface`
+- `cob_obstacle_distance_moveit`
+- `cob_pick_place_action`
+
+Version of package(s) in repository `cob_manipulation`:
+
+- upstream repository: https://github.com/ipa320/cob_manipulation.git
+- release repository: https://github.com/ipa320/cob_manipulation-release.git
+- rosdistro version: `0.6.4-0`
+- old version: `0.6.5-0`
+- new version: `0.6.5-1`
+
+Versions of tools used:
+
+- bloom version: `0.5.26`
+- catkin_pkg version: `0.3.5`
+- rosdep version: `0.11.6`
+- rosdistro version: `0.6.2`
+- vcstools version: `0.1.39`
+
+
 ## cob_manipulation (indigo) - 0.6.5-0
 
 The packages in the `cob_manipulation` repository were released into the `indigo` distro by running `/usr/bin/bloom-release cob_manipulation --track indigo --rosdistro indigo` on `Mon, 31 Jul 2017 12:00:50 -0000`
