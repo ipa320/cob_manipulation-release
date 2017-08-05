@@ -1,0 +1,12 @@
+Source: ros-kinetic-cob-moveit-bringup
+Section: misc
+Priority: extra
+Maintainer: Mathias Luedtke <mdl@ipa.fhg.de>
+Build-Depends: debhelper (>= 9.0.0), ros-kinetic-catkin
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-kinetic-cob-moveit-bringup
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-kinetic-cob-hardware-config, ros-kinetic-cob-moveit-config, ros-kinetic-joint-state-publisher, ros-kinetic-moveit-planners-ompl, ros-kinetic-moveit-plugins, ros-kinetic-moveit-ros-move-group, ros-kinetic-moveit-ros-perception, ros-kinetic-moveit-ros-visualization, ros-kinetic-moveit-setup-assistant, ros-kinetic-robot-state-publisher, ros-kinetic-tf
+Description: MoveIt launch files
