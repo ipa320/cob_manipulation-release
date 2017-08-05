@@ -1,0 +1,13 @@
+Source: ros-kinetic-cob-collision-monitor
+Section: misc
+Priority: extra
+Maintainer: Mathias Lüdtke <mathias.luedtke@ipa.fraunhofer.de>
+Build-Depends: debhelper (>= 9.0.0), ros-kinetic-catkin, ros-kinetic-moveit-ros-move-group, ros-kinetic-moveit-ros-planning, ros-kinetic-pluginlib, ros-kinetic-std-msgs, ros-kinetic-tf
+Homepage: http://wiki.ros.org/cob_collision_monitor
+Standards-Version: 3.9.2
+
+Package: ros-kinetic-cob-collision-monitor
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-kinetic-cob-moveit-config, ros-kinetic-moveit-ros-move-group, ros-kinetic-moveit-ros-planning, ros-kinetic-pluginlib, ros-kinetic-std-msgs, ros-kinetic-tf
+Description: The collision monitor uses the planning scene monitor to read the state of the robot and check it for collision with itselt or the environment.
+ It addition a ground plane is added in any case. Can be used as a stand-aloan node or a move_group capability.
