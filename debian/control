@@ -1,0 +1,12 @@
+Source: ros-kinetic-cob-grasp-generation
+Section: misc
+Priority: extra
+Maintainer: Felix Messmer <fxm@ipa.fhg.de>
+Build-Depends: debhelper (>= 9.0.0), ros-kinetic-actionlib-msgs, ros-kinetic-catkin, ros-kinetic-message-generation, ros-kinetic-moveit-msgs
+Homepage: http://ros.org/wiki/cob_manipulation/
+Standards-Version: 3.9.2
+
+Package: ros-kinetic-cob-grasp-generation
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, python-scipy, ros-kinetic-actionlib, ros-kinetic-actionlib-msgs, ros-kinetic-geometry-msgs, ros-kinetic-message-runtime, ros-kinetic-moveit-msgs, ros-kinetic-roslib, ros-kinetic-rospy, ros-kinetic-tf, ros-kinetic-trajectory-msgs
+Description: Grasp generation for Care-O-bot based on OpenRAVE
