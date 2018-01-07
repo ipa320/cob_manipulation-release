@@ -1,0 +1,12 @@
+Source: ros-indigo-cob-moveit-bringup
+Section: misc
+Priority: extra
+Maintainer: Felix Messmer <fxm@ipa.fhg.de>
+Build-Depends: debhelper (>= 9.0.0), ros-indigo-catkin
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-indigo-cob-moveit-bringup
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-indigo-cob-hardware-config, ros-indigo-cob-moveit-config, ros-indigo-joint-state-publisher, ros-indigo-moveit-planners-ompl, ros-indigo-moveit-plugins, ros-indigo-moveit-ros-move-group, ros-indigo-moveit-ros-perception, ros-indigo-moveit-ros-visualization, ros-indigo-moveit-setup-assistant, ros-indigo-robot-state-publisher, ros-indigo-tf
+Description: MoveIt launch files
