@@ -1,0 +1,79 @@
+ros-indigo-cob-collision-monitor (0.6.6-0trusty) trusty; urgency=high
+
+  * Merge pull request #133 <https://github.com/ipa320/cob_manipulation/issues/133> from ipa320/indigo_release_candidate
+    Indigo release candidate
+  * Merge pull request #124 <https://github.com/ipa320/cob_manipulation/issues/124> from ipa-fxm/update_maintainer
+    update maintainer
+  * update maintainer
+  * Merge pull request #120 <https://github.com/ipa320/cob_manipulation/issues/120> from ipa-fxm/APACHE_license
+    use license apache 2.0
+  * updated author/maintainer
+  * use license apache 2.0
+  * Contributors: Felix Messmer, Mathias Lüdtke, Richard Bormann, ipa-fxm, ipa-uhr-mk
+
+ -- Felix Messmer <fxm@ipa.fhg.de>  Sat, 06 Jan 2018 23:00:00 -0000
+
+ros-indigo-cob-collision-monitor (0.6.5-0trusty) trusty; urgency=high
+
+  * parameters via launch file
+  * default verbosity set to false
+  * catch runtime exception
+  * add debug info to collision_monitor
+  * restructure moveit config
+  * do not load robot_description in cob_moveit_config/upload_config.launch
+  * minor launch adjustments
+  * update cob_collision_monitor
+  * add remaps for cob4 as comments
+  * Contributors: ipa-fxm, ipa-nhg
+
+ -- Mathias Lüdtke <mathias.luedtke@ipa.fraunhofer.de>  Sun, 30 Jul 2017 22:00:00 -0000
+
+ros-indigo-cob-collision-monitor (0.6.4-0trusty) trusty; urgency=high
+
+  * explicit name for the collision_monitor plugin
+  * add launch file for standalone collision_monitor node
+  * introducing default values for parameter circumpassing fcl bug
+  * Fixed typo, i was missing in lib path
+  * removed most auto-generted comments
+  * added cob_collision_monitor package
+  * Contributors: Mathias Lüdtke, ipa-fxm, ipa-mdl
+
+ -- Mathias Lüdtke <mathias.luedtke@ipa.fraunhofer.de>  Thu, 31 Mar 2016 22:00:00 -0000
+
+ros-indigo-cob-collision-monitor (0.6.3-0trusty) trusty; urgency=high
+
+
+
+ -- Mathias Lüdtke <mathias.luedtke@ipa.fraunhofer.de>  Sun, 30 Aug 2015 22:00:00 -0000
+
+ros-indigo-cob-collision-monitor (0.6.2-0trusty) trusty; urgency=high
+
+
+
+ -- Mathias Lüdtke <mathias.luedtke@ipa.fraunhofer.de>  Fri, 28 Aug 2015 22:00:00 -0000
+
+ros-indigo-cob-collision-monitor (0.6.1-0trusty) trusty; urgency=high
+
+
+
+ -- Mathias Lüdtke <mathias.luedtke@ipa.fraunhofer.de>  Tue, 16 Jun 2015 22:00:00 -0000
+
+ros-indigo-cob-collision-monitor (0.6.0-0trusty) trusty; urgency=high
+
+
+
+ -- Mathias Lüdtke <mathias.luedtke@ipa.fraunhofer.de>  Wed, 17 Sep 2014 22:00:00 -0000
+
+ros-indigo-cob-collision-monitor (0.5.2-0trusty) trusty; urgency=high
+
+
+
+ -- Mathias Lüdtke <mathias.luedtke@ipa.fraunhofer.de>  Wed, 27 Aug 2014 22:00:00 -0000
+
+ros-indigo-cob-collision-monitor (0.5.1-0trusty) trusty; urgency=high
+
+
+
+ -- Mathias Lüdtke <mathias.luedtke@ipa.fraunhofer.de>  Tue, 25 Mar 2014 23:00:00 -0000
+
+
