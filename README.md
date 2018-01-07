@@ -1,39 +1,25 @@
-### MANUAL GENERATION OF GRASP TABLE
+cob_manipulation
+===========
 
-#### 1. Provide a collision mesh of the target object (as `*.stl`)
-Most likely there already is a collada mesh (`*.dae`) available in `cob_gazebo_objects`. Thus you simply have to convert the mesh from `*.dae` to `*.stl` using MeshLab for example.  
-  1. Open MeshLab -> File -> Import Mesh ... -> select respective mesh `[object_name].dae` from `cob_simulation/cob_gazebo_objects/media/models`
-  2. File -> Export Mesh As ... -> Save it as `[object_name].stl` within `cob_manipulatiuon/cob_grasp_generation/files/meshes`
+## ROS Distro Support
 
-#### 2. Prepare a new grasp table
-You need to provide a `*.csv` file of the name `[gripper_type]_[object_name].csv` at `cob_manipulation/cob_grasp_generation/files/database/[object_name]`, where `[object_name]` is the same as for the collision mesh and `[gripper_type]` could e.g. be either `sdh` or `sdhx` (cob4-gripper).
-The `*.csv` file has the following layout (columns):
+|         | Indigo | Jade | Kinetic |
+|:-------:|:------:|:----:|:-------:|
+| Branch  | [`indigo_dev`](https://github.com/ipa320/cob_manipulation/tree/indigo_dev) | [`indigo_dev`](https://github.com/ipa320/cob_manipulation/tree/indigo_dev) | [`kinetic_dev`](https://github.com/ipa320/cob_manipulation/tree/kinetic_dev) |
+| Status  |  supported | not supported |  supported |
+| Version | [version](http://repositories.ros.org/status_page/ros_indigo_default.html?q=cob_manipulation) | [version](http://repositories.ros.org/status_page/ros_jade_default.html?q=cob_manipulation) | [version](http://repositories.ros.org/status_page/ros_kinetic_default.html?q=cob_manipulation) |
 
-| id | object | *[gripper_joint_0]*  | *[gripper_joint_n]* | direction | qw | qx | qy | qz | pos-x | pos-y | pos-z | eps_l1 | vol_l1 |   |
-|:--:|:------:|:------------------:|:-----------------:|:---------:|:--:|:--:|:--:|:--:|:-----:|:-------:|:-----:|:------:|:------:|:-:|
-|0|*[object_name]*|*[joint_pos_0]*|*[joint_pos_n]*|*[DIRECTION]*|*[qw]*|*[qx]*|*[qy]*|*[qz]*|*[pos-x]*|*[pos-y]*|*[pos-z]*|*[eps_l1]*|*[vol_l1]*|0|
+## Travis - Continuous Integration
 
-where `id` is the grasp_id, `object` is `[object_name]`, followed by one column for each joint of the gripper specifying the joint configuration of the gripper when grasping the object (with `gripper_joint_0` to `gripper_joint_n` being the gripper's joint_names), `direction` can be used to specify e.g. as [TOP|SIDE|BOTTOM|...] grasp, the grasp pose of the gripper reference coordinate system with respect to the object reference coordinate system (with [qw, qx, qy, qz] specifying the orientation as a quaternion and [pos-x, pos-y, pos-z] specifying the position in [mm]), `eps_l1` and `vol_l1` being grasp metrics e.g. force closure that can be used as grasp quality metric for sorting the grasps.
+Status: [![Build Status](https://travis-ci.org/ipa320/cob_manipulation.svg?branch=indigo_dev)](https://travis-ci.org/ipa320/cob_manipulation)
 
-Notes:
- - each ros specifies another grasps (make sure to increase `id` accordingly)
- - the quaternion needs to be normalized, i.e. sqrt(qw² + qx² + qy² + qz²)!=1.0 (you might need to increase floating point precision to about 5 decimal digits. e.g. (0.0, 0.707, 0.0, 0.707) will throw an error; use (0.0, 0.707107, 0.0, 0.707107) instead!
- - you can initialize a grasptable by copying from an existing database entry
- 
-#### 3. Use blender for generating initial grasp poses easily
-1. Open the Blender
-2. Clear the scene by removing all objects: press `a` (select all the objects), `Entf` (delete), `Enter` (confirm)
-3. Load the object: File -> Import -> STL (.stl) -> select `[object_name].stl` from `cob_manipulatiuon/cob_grasp_generation/files/meshes` (see step (1))
-4. Load the gripper: File -> Import -> STL (.stl) -> select `[gripper].stl`, e.g. `palm.stl` from `cob_common/cob_descriptions/meshes/cob4_gripper` for sdhx (cob4-gripper)
-5. Move the gripper to various grasp poses (**do not move the object**) by either using
-     - ```g+x,g+y,g+z: for translation along x,y,z```
-     - ```r+x,r+y,r+z: for rotation around x,y,z```
-     - ```enter values directly```
-6. Transfer the values from the Blender (position in [m], use the Quaternion RotationMode from the Dropdown menue!) to the grasp table (pos in [mm]!)
+## ROS Buildfarm
 
-#### 4. Visualization of the grasps  in rviz
-1. `roslaunch cob_grasp_generation show_grasp_rviz.launch gripper:=[gripper_type]`
-2. `rosrun cob_grasp_generation show_grasps_rviz_client.py` (then enter [object_name] and [gripper_type] when prompted)
+|         | Indigo Source | Indigo Debian | Jade Source | Jade Debian |  Kinetic Source  |  Kinetic Debian |
+|:-------:|:-------------------:|:-------------------:|:-------------------:|:-------------------:|:-------------------:|:-------------------:|
+| cob_manipulation | [![not released](http://build.ros.org/buildStatus/icon?job=Isrc_uT__cob_manipulation__ubuntu_trusty__source)](http://build.ros.org/view/Isrc_uT/job/Isrc_uT__cob_manipulation__ubuntu_trusty__source/) | [![not released](http://build.ros.org/buildStatus/icon?job=Ibin_uT64__cob_manipulation__ubuntu_trusty_amd64__binary)](http://build.ros.org/view/Ibin_uT64/job/Ibin_uT64__cob_manipulation__ubuntu_trusty_amd64__binary/) | [![not released](http://build.ros.org/buildStatus/icon?job=Jsrc_uT__cob_manipulation__ubuntu_trusty__source)](http://build.ros.org/view/Jsrc_uT/job/Jsrc_uT__cob_manipulation__ubuntu_trusty__source/) | [![not released](http://build.ros.org/buildStatus/icon?job=Jbin_uT64__cob_manipulation__ubuntu_trusty_amd64__binary)](http://build.ros.org/view/Jbin_uT64/job/Jbin_uT64__cob_manipulation__ubuntu_trusty_amd64__binary/) | [![not released](http://build.ros.org/buildStatus/icon?job=Ksrc_uX__cob_manipulation__ubuntu_xenial__source)](http://build.ros.org/view/Ksrc_uX/job/Ksrc_uX__cob_manipulation__ubuntu_xenial__source/) | [![not released](http://build.ros.org/buildStatus/icon?job=Kbin_uX64__cob_manipulation__ubuntu_xenial_amd64__binary)](http://build.ros.org/view/Kbin_uX64/job/Kbin_uX64__cob_manipulation__ubuntu_xenial_amd64__binary/) |
 
-### 5. Tune grasps 
-Optimize the grasp entries in the table by modifying the grasp pose and/or grasp joint config based on the rviz visualization. Add more grasps
+
+This is a repository for Care-O-bot manipulation packages.
+
+Installation instructions and tutorials can be found at http://www.care-o-bot.org.
