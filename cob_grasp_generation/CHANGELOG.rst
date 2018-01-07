@@ -2,10 +2,22 @@
 Changelog for package cob_grasp_generation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-0.6.6 (2018-01-07)
+0.7.1 (2018-01-07)
 ------------------
-* Merge pull request `#133 <https://github.com/ipa320/cob_manipulation/issues/133>`_ from ipa320/indigo_release_candidate
-  Indigo release candidate
+* Merge pull request `#134 <https://github.com/ipa320/cob_manipulation/issues/134>`_ from ipa320/kinetic_release_candidate
+  Kinetic release candidate
+* Merge pull request `#132 <https://github.com/ipa320/cob_manipulation/issues/132>`_ from ipa-fxm/kinetic_dev
+  [kinetic] updates from indigo_dev
+* Merge branch 'indigo_dev' of github.com:ipa320/cob_manipulation into kinetic_dev
+  Conflicts:
+  .travis.yml
+  cob_kinematics/ikfast/src/ikfast_lbr.cpp
+  cob_kinematics/ikfast/src/ikfast_ur10.cpp
+  cob_kinematics/ikfast/src/ikfast_ur5.cpp
+  cob_kinematics/package.xml
+  cob_kinematics/ros/bin/genikfast.py
+  cob_kinematics/ros/src/ikfast_plugin.cpp
+  cob_kinematics/ros/src/urdf_openrave.cpp
 * document manual generation of grasp table (`#127 <https://github.com/ipa320/cob_manipulation/issues/127>`_)
   * document manual generation of grasp table
   * document manual generation of grasp table 2
@@ -29,6 +41,9 @@ Changelog for package cob_grasp_generation
   use license apache 2.0
 * use license apache 2.0
 * Contributors: Felix Messmer, Richard Bormann, ipa-fxm, ipa-rmb-pz, ipa-uhr-mk
+
+0.7.0 (2017-07-31)
+------------------
 
 0.6.5 (2017-07-31)
 ------------------
