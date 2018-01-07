@@ -1,0 +1,12 @@
+Source: ros-kinetic-cob-pick-place-action
+Section: misc
+Priority: extra
+Maintainer: Felix Messmer <fxm@ipa.fhg.de>
+Build-Depends: debhelper (>= 9.0.0), ros-kinetic-actionlib, ros-kinetic-actionlib-msgs, ros-kinetic-catkin, ros-kinetic-cob-grasp-generation, ros-kinetic-cob-moveit-interface, ros-kinetic-geometric-shapes, ros-kinetic-geometry-msgs, ros-kinetic-message-generation, ros-kinetic-moveit-msgs, ros-kinetic-moveit-ros-move-group, ros-kinetic-moveit-ros-planning-interface, ros-kinetic-roscpp, ros-kinetic-std-msgs, ros-kinetic-tf
+Homepage: http://ros.org/wiki/cob_manipulation/
+Standards-Version: 3.9.2
+
+Package: ros-kinetic-cob-pick-place-action
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-kinetic-actionlib, ros-kinetic-actionlib-msgs, ros-kinetic-cob-grasp-generation, ros-kinetic-cob-moveit-interface, ros-kinetic-geometric-shapes, ros-kinetic-geometry-msgs, ros-kinetic-message-runtime, ros-kinetic-moveit-msgs, ros-kinetic-moveit-ros-move-group, ros-kinetic-moveit-ros-planning-interface, ros-kinetic-roscpp, ros-kinetic-rospy, ros-kinetic-std-msgs, ros-kinetic-tf
+Description: An action interface to MoveIt!'s pick-and-place for Care-O-bot
