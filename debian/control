@@ -1,0 +1,13 @@
+Source: ros-melodic-cob-collision-monitor
+Section: misc
+Priority: optional
+Maintainer: Felix Messmer <fxm@ipa.fhg.de>
+Build-Depends: debhelper (>= 9.0.0), ros-melodic-catkin, ros-melodic-moveit-ros-move-group, ros-melodic-moveit-ros-planning, ros-melodic-pluginlib, ros-melodic-std-msgs, ros-melodic-tf, ros-melodic-tf2-ros
+Homepage: http://wiki.ros.org/cob_collision_monitor
+Standards-Version: 3.9.2
+
+Package: ros-melodic-cob-collision-monitor
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-melodic-cob-moveit-config, ros-melodic-moveit-ros-move-group, ros-melodic-moveit-ros-planning, ros-melodic-pluginlib, ros-melodic-std-msgs, ros-melodic-tf, ros-melodic-tf2-ros
+Description: The collision monitor uses the planning scene monitor to read the state of the robot and check it for collision with itselt or the environment.
+ It addition a ground plane is added in any case. Can be used as a stand-aloan node or a move_group capability.
