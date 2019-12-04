@@ -1,0 +1,12 @@
+Source: ros-melodic-cob-moveit-bringup
+Section: misc
+Priority: optional
+Maintainer: Felix Messmer <fxm@ipa.fhg.de>
+Build-Depends: debhelper (>= 9.0.0), ros-melodic-catkin
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-melodic-cob-moveit-bringup
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-melodic-cob-hardware-config, ros-melodic-cob-moveit-config, ros-melodic-joint-state-publisher, ros-melodic-moveit-planners-ompl, ros-melodic-moveit-plugins, ros-melodic-moveit-ros-move-group, ros-melodic-moveit-ros-perception, ros-melodic-moveit-ros-visualization, ros-melodic-moveit-setup-assistant, ros-melodic-robot-state-publisher, ros-melodic-tf
+Description: MoveIt launch files
