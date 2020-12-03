@@ -1,0 +1,12 @@
+Source: ros-melodic-cob-grasp-generation
+Section: misc
+Priority: optional
+Maintainer: Felix Messmer <fxm@ipa.fhg.de>
+Build-Depends: debhelper (>= 9.0.0), python-setuptools, ros-melodic-actionlib-msgs, ros-melodic-catkin, ros-melodic-message-generation, ros-melodic-moveit-msgs
+Homepage: http://ros.org/wiki/cob_manipulation/
+Standards-Version: 3.9.2
+
+Package: ros-melodic-cob-grasp-generation
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, python-scipy, python-six, ros-melodic-actionlib, ros-melodic-actionlib-msgs, ros-melodic-cob-description, ros-melodic-geometry-msgs, ros-melodic-message-runtime, ros-melodic-moveit-msgs, ros-melodic-robot-state-publisher, ros-melodic-roslib, ros-melodic-rospy, ros-melodic-rviz, ros-melodic-schunk-description, ros-melodic-sensor-msgs, ros-melodic-std-msgs, ros-melodic-tf, ros-melodic-tf2-ros, ros-melodic-trajectory-msgs, ros-melodic-visualization-msgs, ros-melodic-xacro
+Description: Grasp generation for Care-O-bot based on OpenRAVE
