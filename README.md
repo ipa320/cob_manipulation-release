@@ -1,3 +1,33 @@
+## cob_manipulation (melodic) - 0.7.5-1
+
+The packages in the `cob_manipulation` repository were released into the `melodic` distro by running `/usr/bin/bloom-release cob_manipulation --rosdistro melodic` on `Thu, 03 Dec 2020 17:40:21 -0000`
+
+These packages were released:
+- `cob_collision_monitor`
+- `cob_grasp_generation`
+- `cob_lookat_action`
+- `cob_manipulation`
+- `cob_moveit_bringup`
+- `cob_moveit_interface`
+- `cob_obstacle_distance_moveit`
+
+Version of package(s) in repository `cob_manipulation`:
+
+- upstream repository: https://github.com/ipa320/cob_manipulation.git
+- release repository: https://github.com/ipa320/cob_manipulation-release.git
+- rosdistro version: `0.7.4-1`
+- old version: `0.7.4-1`
+- new version: `0.7.5-1`
+
+Versions of tools used:
+
+- bloom version: `0.10.0`
+- catkin_pkg version: `0.4.23`
+- rosdep version: `0.20.0`
+- rosdistro version: `0.8.3`
+- vcstools version: `0.1.42`
+
+
 ## cob_manipulation (kinetic) - 0.7.5-1
 
 The packages in the `cob_manipulation` repository were released into the `kinetic` distro by running `/usr/bin/bloom-release cob_manipulation --rosdistro kinetic` on `Thu, 03 Dec 2020 17:19:22 -0000`
