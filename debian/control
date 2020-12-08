@@ -1,0 +1,12 @@
+Source: ros-noetic-cob-lookat-action
+Section: misc
+Priority: optional
+Maintainer: Felix Messmer <fxm@ipa.fhg.de>
+Build-Depends: debhelper (>= 9.0.0), liborocos-kdl-dev, liborocos-kdl1.4, ros-noetic-actionlib, ros-noetic-actionlib-msgs, ros-noetic-angles, ros-noetic-catkin, ros-noetic-control-msgs, ros-noetic-geometry-msgs, ros-noetic-kdl-conversions, ros-noetic-kdl-parser, ros-noetic-message-generation, ros-noetic-move-base-msgs, ros-noetic-roscpp, ros-noetic-sensor-msgs, ros-noetic-tf, ros-noetic-tf-conversions, ros-noetic-tf2-ros, ros-noetic-trajectory-msgs
+Homepage: http://ros.org/wiki/cob_manipulation/
+Standards-Version: 3.9.2
+
+Package: ros-noetic-cob-lookat-action
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, liborocos-kdl-dev, liborocos-kdl1.4, ros-noetic-actionlib, ros-noetic-actionlib-msgs, ros-noetic-angles, ros-noetic-control-msgs, ros-noetic-geometry-msgs, ros-noetic-kdl-conversions, ros-noetic-kdl-parser, ros-noetic-message-runtime, ros-noetic-move-base-msgs, ros-noetic-roscpp, ros-noetic-rospy, ros-noetic-sensor-msgs, ros-noetic-tf, ros-noetic-tf-conversions, ros-noetic-tf2-ros, ros-noetic-trajectory-msgs
+Description: cob_lookat_action
