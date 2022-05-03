@@ -1,0 +1,12 @@
+Source: ros-noetic-cob-manipulation
+Section: misc
+Priority: optional
+Maintainer: Felix Messmer <fxm@ipa.fhg.de>
+Build-Depends: debhelper (>= 9.0.0), ros-noetic-catkin
+Homepage: http://ros.org/wiki/cob_manipulation/
+Standards-Version: 3.9.2
+
+Package: ros-noetic-cob-manipulation
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-noetic-cob-collision-monitor, ros-noetic-cob-grasp-generation, ros-noetic-cob-lookat-action, ros-noetic-cob-manipulation-msgs, ros-noetic-cob-moveit-bringup, ros-noetic-cob-moveit-interface
+Description: The cob_manipulation stack includes packages that provide manipulation capabilities for Care-O-bot.
