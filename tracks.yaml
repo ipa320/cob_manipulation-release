@@ -114,7 +114,7 @@ tracks:
     last_version: 0.7.6
     name: upstream
     patches: null
-    release_inc: '1'
+    release_inc: '2'
     release_repo_url: git@github.com:ipa320/cob_manipulation-release.git
     release_tag: :{version}
     ros_distro: noetic
