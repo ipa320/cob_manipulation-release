@@ -1,0 +1,105 @@
+ros-noetic-cob-manipulation-msgs (0.7.7-1buster) buster; urgency=high
+
+
+
+ -- Felix Messmer <felixmessmer@gmail.com>  Thu, 28 Jul 2022 22:00:00 -0000
+
+ros-noetic-cob-manipulation-msgs (0.7.6-1buster) buster; urgency=high
+
+  * update changelogs
+  * Merge pull request #150 <https://github.com/ipa320/cob_manipulation/issues/150> from fmessmer/fix_pylint
+    fix ci
+  * move messages to dedicated package
+  * Contributors: Felix Messmer, fmessmer
+  * Merge pull request #150 <https://github.com/ipa320/cob_manipulation/issues/150> from fmessmer/fix_pylint
+    fix ci
+  * move messages to dedicated package
+  * Contributors: Felix Messmer, fmessmer
+
+ -- Felix Messmer <felixmessmer@gmail.com>  Wed, 22 Dec 2021 23:00:00 -0000
+
+ros-noetic-cob-manipulation-msgs (0.7.5-1buster) buster; urgency=high
+
+
+
+ -- Felix Messmer <felixmessmer@gmail.com>  Wed, 02 Dec 2020 23:00:00 -0000
+
+ros-noetic-cob-manipulation-msgs (0.7.4-1buster) buster; urgency=high
+
+
+
+ -- Felix Messmer <felixmessmer@gmail.com>  Tue, 17 Mar 2020 23:00:00 -0000
+
+ros-noetic-cob-manipulation-msgs (0.7.3-1buster) buster; urgency=high
+
+
+
+ -- Felix Messmer <felixmessmer@gmail.com>  Tue, 03 Dec 2019 23:00:00 -0000
+
+ros-noetic-cob-manipulation-msgs (0.7.2-1buster) buster; urgency=high
+
+
+
+ -- Felix Messmer <felixmessmer@gmail.com>  Sun, 19 May 2019 22:00:00 -0000
+
+ros-noetic-cob-manipulation-msgs (0.7.1-1buster) buster; urgency=high
+
+
+
+ -- Felix Messmer <felixmessmer@gmail.com>  Sat, 06 Jan 2018 23:00:00 -0000
+
+ros-noetic-cob-manipulation-msgs (0.7.0-1buster) buster; urgency=high
+
+
+
+ -- Felix Messmer <felixmessmer@gmail.com>  Mon, 31 Jul 2017 13:44:00 -0000
+
+ros-noetic-cob-manipulation-msgs (0.6.5-1buster) buster; urgency=high
+
+
+
+ -- Felix Messmer <felixmessmer@gmail.com>  Mon, 31 Jul 2017 11:19:00 -0000
+
+ros-noetic-cob-manipulation-msgs (0.6.4-1buster) buster; urgency=high
+
+
+
+ -- Felix Messmer <felixmessmer@gmail.com>  Thu, 31 Mar 2016 22:00:00 -0000
+
+ros-noetic-cob-manipulation-msgs (0.6.3-1buster) buster; urgency=high
+
+
+
+ -- Felix Messmer <felixmessmer@gmail.com>  Sun, 30 Aug 2015 22:00:00 -0000
+
+ros-noetic-cob-manipulation-msgs (0.6.2-1buster) buster; urgency=high
+
+
+
+ -- Felix Messmer <felixmessmer@gmail.com>  Fri, 28 Aug 2015 22:00:00 -0000
+
+ros-noetic-cob-manipulation-msgs (0.6.1-1buster) buster; urgency=high
+
+
+
+ -- Felix Messmer <felixmessmer@gmail.com>  Tue, 16 Jun 2015 22:00:00 -0000
+
+ros-noetic-cob-manipulation-msgs (0.6.0-1buster) buster; urgency=high
+
+
+
+ -- Felix Messmer <felixmessmer@gmail.com>  Wed, 17 Sep 2014 22:00:00 -0000
+
+ros-noetic-cob-manipulation-msgs (0.5.2-1buster) buster; urgency=high
+
+
+
+ -- Felix Messmer <felixmessmer@gmail.com>  Wed, 27 Aug 2014 22:00:00 -0000
+
+ros-noetic-cob-manipulation-msgs (0.5.1-1buster) buster; urgency=high
+
+
+
+ -- Felix Messmer <felixmessmer@gmail.com>  Tue, 25 Mar 2014 23:00:00 -0000
+
+
