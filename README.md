@@ -1,3 +1,37 @@
+## cob_manipulation (noetic) - 0.7.9-1
+
+The packages in the `cob_manipulation` repository were released into the `noetic` distro by running `/usr/bin/bloom-release -r noetic -t noetic cob_manipulation` on `Mon, 19 Feb 2024 16:56:37 -0000`
+
+These packages were released:
+- `cob_collision_monitor`
+- `cob_grasp_generation`
+- `cob_lookat_action`
+- `cob_manipulation`
+- `cob_manipulation_msgs`
+- `cob_moveit_bringup`
+- `cob_moveit_interface`
+
+These packages were explicitly ignored:
+- `cob_obstacle_distance_moveit`
+- `cob_pick_place_action`
+
+Version of package(s) in repository `cob_manipulation`:
+
+- upstream repository: https://github.com/ipa320/cob_manipulation.git
+- release repository: https://github.com/ipa320/cob_manipulation-release.git
+- rosdistro version: `0.7.8-1`
+- old version: `0.7.8-1`
+- new version: `0.7.9-1`
+
+Versions of tools used:
+
+- bloom version: `0.11.2`
+- catkin_pkg version: `1.0.0`
+- rosdep version: `0.22.2`
+- rosdistro version: `0.9.0`
+- vcstools version: `0.1.42`
+
+
 ## cob_manipulation (noetic) - 0.7.8-1
 
 The packages in the `cob_manipulation` repository were released into the `noetic` distro by running `/usr/bin/bloom-release --ros-distro noetic cob_manipulation` on `Wed, 04 Jan 2023 11:14:47 -0000`
